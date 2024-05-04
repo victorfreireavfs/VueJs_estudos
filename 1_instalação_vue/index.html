@@ -9,9 +9,21 @@
 </head>
 <body>
     <div id="app">
-        <p>O meu nome é: {{ nome }} e tenho {{ idade }} anos!</p>
-        <h1>{{ nome }}  e tenho {{ idade }} anos!</h1>
-        <h2> {{ nome }} e tenho {{ idade }} anos!</h2>
+        <form id="app-form" >
+            <input type="text" v-model="input_name" placeholder="Digite seu nome">
+            <input type="text" v-model="input_idade" placeholder="Digite sua idade">
+            <input type="submit" value="Enviar" v-on:click="submitForm">
+        </form>
+        
+        <p>O meu nome é {{ nome }} !</p>
+        <p>O meu nome é  {{ input_name }} </p>
+
+        <p>E minha idade é: {{ idade }}</p>
+        <p>E minha idade é: {{ input_idade }}</p>
+
+
+        <!-- <h1>{{ nome }}  e tenho {{ idade }} anos!</h1>
+        <h2> {{ nome }} e tenho {{ idade }} anos!</h2> -->
         <!-- {{}} sintaxe especial para renderizar dados no tamplate
          colocar o nome da propriedade criada no script
         -->
