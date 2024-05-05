@@ -131,4 +131,10 @@ EXPLORANDO EVENTOS
 - eventos complementam ações do usuário com as ativções do metodos
 - @click é um dos eventos que podem ser adicionados diretamente no HTML
 - o evento recebe um "PARÂMETRO" que é o método que será executado
--
+- @submit executa o input botton do form (criar method para o @submit)
+- $event = objeto especial do vue que vai dentro do method
+- e.preventDefault() = criando const com os nomes dos dados e pegando o this. do return para serem preeenchidos
+
+
+----------------------------------
+
