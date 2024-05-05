@@ -138,3 +138,19 @@ EXPLORANDO EVENTOS
 
 ----------------------------------
 
+MÚLTIPOS EVENTOS
+- Como ativar mais de um evento(evento que parte dop usuário) com uma única aplicação
+- a sintaxe permanece a mesma porém separadas por vírgulas
+- em methods as funções são separadas por vírgulas
+- arrow functions { setTimeout (() => this.nomedoelemento = "valor a ser exibido" , tempoem Ms) }
+- @click pode abrigar mais de um evento separado por vírgula e o VUE.JS proporciona isso de maneira
+  dinâmica.
+
+
+------------------------------------
+
+REUTILIZAÇÃO DE COMPONENTES
+- reutilização de componentes é comum e cada componente é totalmente independente
+- podendo ativar seus métodos e mudar seus dados sempre que necessário
+- invocar novamente o componente após a utilização do mesmo
+- 
