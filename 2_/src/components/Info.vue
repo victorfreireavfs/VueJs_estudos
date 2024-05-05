@@ -8,7 +8,7 @@
             <li>PHP</li>
             <li>Python</li>
         </ul>
-        <p v-if="3 > 2">Testando</p>
+        <p v-if="3 > 2" class="paragrafo_pai">Testando</p>
         <div>
             <button @click="showEmail">{{ texto_botao }}</button>
         </div>
@@ -49,3 +49,10 @@ export default {
     }
 }
 </script>
+
+<style>
+    .paragrafo_pai{
+        color:rgb(0, 17, 255);
+        font-weight: bold;
+    }
+</style>

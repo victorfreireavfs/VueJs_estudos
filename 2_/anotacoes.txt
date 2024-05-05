@@ -109,4 +109,15 @@ CSS GLOBAL E SCOPED
 - GLOBAL= definido no App e se aplica a todos os elementos
 - SCOPED = onde cada componente tem seu estilo
 - geralmente se usa o scoped para estilizar os componentes individualmente
-- 
+- global é global em qualquer lugar da aplicação
+
+- scoped= componente com CSS scoped tem prioridade sobre o global
+- estilização especifica feita num coponente e estilizado no app
+
+----------------------
+
+REDERIZAÇÃO DE LISTAS
+- as LISTAS (arrays) serão renderizadas por diretivas
+- utilizando o v-for o dado pode vir de DATA, como um arrays
+- cada item pode ser impresso junto do html
+-

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header/>
     <PrimeiroComponente/>
     <p class="paragrafo-pai"></p>
     <LifeCycle/>
@@ -8,6 +9,7 @@
 </template>
 
 <script>
+  import Header from './components/Header.vue'
   import PrimeiroComponente from './components/PrimeiroComponente.vue'
   import LifeCycle from './components/LifeCycle.vue'
   import Pessoa from './components/Pessoa.vue'
@@ -17,7 +19,8 @@
     components: {
       PrimeiroComponente,
       LifeCycle,
-      Pessoa
+      Pessoa,
+      Header
     }
   }
 </script>
