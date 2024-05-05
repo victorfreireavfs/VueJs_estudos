@@ -153,4 +153,5 @@ REUTILIZAÇÃO DE COMPONENTES
 - reutilização de componentes é comum e cada componente é totalmente independente
 - podendo ativar seus métodos e mudar seus dados sempre que necessário
 - invocar novamente o componente após a utilização do mesmo
+- lembrar( todo DATA tem que ter o return )
 - 

@@ -1,5 +1,6 @@
 <template>
     <img :src="avatar" :alt="descricao" :title="title">
+    <>
 </template>
 
 <script>
