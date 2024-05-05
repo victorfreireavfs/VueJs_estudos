@@ -154,4 +154,14 @@ REUTILIZAÇÃO DE COMPONENTES
 - podendo ativar seus métodos e mudar seus dados sempre que necessário
 - invocar novamente o componente após a utilização do mesmo
 - lembrar( todo DATA tem que ter o return )
+
+
+----------------------------------
+
+PASSAR DADOS COM PROPS
+- os componentes do vue podem receber dados. este recurso é chamado de 
+  props
+- passados por valores DATA ou inseridos direto
+- declarar as propriedades recebidas pelos componentes em um array ou 
+ objeto
 - 
