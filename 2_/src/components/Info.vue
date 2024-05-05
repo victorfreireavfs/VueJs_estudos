@@ -10,21 +10,21 @@
         </ul>
         <p v-if="3 > 2">Testando</p>
         <div>
-            <button @click="show_email">{{ texto_botao }}</button>
+            <button @click="showEmail">{{ texto_botao }}</button>
         </div>
         <p v-show="mostrar_email">Meu email é:  {{ email }}</p>
-        <Picture/>
-        <p>Para acessar meu portifólio basta <a v-bind:href="meu_link" target="_blank">clicar aqui</a></p>
+        <Logo/>
+        <p class="teste">Para acessar meu portifólio basta <a v-bind:href="meu_link" target="_blank">clicar aqui</a></p>
     </div>
 </template>
 
 <script>
-import Picture from "./Picture.vue"
+import Logo from "./Picture.vue"
 
 export default {
     name: 'Info',
     components: {
-        Picture
+        Logo
     },
     
     data(){
@@ -38,7 +38,7 @@ export default {
     },
     
     methods:{
-    show_email(){
+    showEmail(){
             this.mostrar_email = !this.mostrar_email
             if(!this.mostrar_email){
                 this.texto_botao='Mostrar email.'

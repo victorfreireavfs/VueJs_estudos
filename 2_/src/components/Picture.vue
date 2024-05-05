@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    name: 'Picture',
+    name: 'Logo',
     data(){
         return{
             avatar:"/img/avatar.png",

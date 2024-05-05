@@ -1,0 +1,112 @@
+VUE JS
+
+- importando cds do site vue e salvando scrippt
+  no head do html
+
+- criando arquivo script no head (defer executa a aplicação no carregamento do html)
+
+- iniciando o elemento com id definido
+
+
+
+ CRIANDO NOVA INSTANCIA DO VUE
+
+-criando const com nome e ={}
+
+- definindo um objeto com a propriedade data() que retorna dados 
+pro front da aplicação
+
+- após data() criar notação de função {}
+
+return{ aqui todos os dados em forma de objeto chave e valor retornam pro front } 
+
+
+-criar o app com base no ID da div criada no elemento html
+
+Vue.createApp(NOME DA CONST).mount("#app")
+
+mount=montar
+
+TODO É TRATADO COMO COMPONENTE NO VUEJS
+
+
+------------------------
+
+DATA BINDING = muda um dado em tempo real por meio de um input
+
+- V-MODEL = salvar dado do input em alguma parte da api do vue
+- V-ON:CLICK = usado pra linkar a função do click com o api criado
+ 
+-methods: chamar as funções
+-console.log = tipo o echo, exibe a variável
+-this.NomeDaVariavel 
+
+
+------------------------------
+
+CLI = ferramenta de linha de comando (digitar comandos)
+
+- tem o Vue Router
+
+- instalando o note
+
+- npm run server(ERROR PERGUNTAR KLEBER)
+
+--------------------------------------
+
+próxima aula
+
+- COMPONENTES
+-cli instalado e pasta criada para o projeto
+
+- tudo no vue é componente. cada parte do html (tamplate) é feita nos componentes.
+- isso melhora a reutilização de um componente mantendo sua autonomia em cada local.
+- para isso precisa exportar o componente no proprio script e importar ele no script
+  da aplicação principal. logo após chama-lo pelo nome dele no elemento que for usar esse componente,
+
+-----------------------
+
+DADOS NOS COMPONENTES
+
+- pode-se iniciar os componentes com dados chamando a função DATA e receber um RETURN em formato de chave e valor
+- chave seria o nome do dado e o valor :victor
+- dados serão retornados para os componentes chamados na aplicação
+- pode criar o DATA no App root tbm
+
+--------------------
+
+LIFE CYCLE HOOKS 
+
+- eventos que podem ser ativados em partes da execução do programa
+- gatilho de função (exemplo)
+- executa o código quando o componente é criado. criando diferentes ações
+- o created cria um valor pra aquele elemento que é citado por meio do parâmetro this. =
+- aqui os scripts servem para que eventos acontecam ao vivo com arrow functions (( => {} ,)
+ 
+-------------------------
+
+HIERARQUIA DE COMPONENTES
+
+- árvore de componentes(uns que dependem de outros)
+- cuidado para não criar uma complexidade desnecessária
+- componentes com subcomponentes separa ainda mais as responsabilidades de cada componente
+- reutilizar em outros componentes
+
+
+-------------------------
+
+MÉTODOS
+- são como as funções. são baseados em eventos ou por alguma lógica de aplicação
+- ficam num objeto chamado METHODS (próximo ao DATA)
+- criaremos as funções que farão parte das ações da aplicação
+- são invocadas por meio do @click 
+- dentro do methods pode-se usar if else
+
+-------------------------
+
+CSS GLOBAL E SCOPED
+
+- GLOBAL= definido no App e se aplica a todos os elementos
+- SCOPED = onde cada componente tem seu estilo
+- geralmente se usa o scoped para estilizar os componentes individualmente
+- 
