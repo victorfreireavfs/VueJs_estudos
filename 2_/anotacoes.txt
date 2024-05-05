@@ -118,6 +118,17 @@ CSS GLOBAL E SCOPED
 
 REDERIZAÇÃO DE LISTAS
 - as LISTAS (arrays) serão renderizadas por diretivas
-- utilizando o v-for o dado pode vir de DATA, como um arrays
+- utilizando a diretiva v-for o dado pode vir de DATA, como um arrays
 - cada item pode ser impresso junto do html
+- v-for="(nome da lista, index) in nome do ARRAY criado no data" 
+- usa-se o v-bind:key="index" para evitar erro de sintaxe
+
+- quando for objeto tem que dar um id e um nome para o conteudo seguido do seu valor
+
+-----------------------
+
+EXPLORANDO EVENTOS
+- eventos complementam ações do usuário com as ativções do metodos
+- @click é um dos eventos que podem ser adicionados diretamente no HTML
+- o evento recebe um "PARÂMETRO" que é o método que será executado
 -

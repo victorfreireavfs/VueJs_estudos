@@ -2,18 +2,31 @@
      <div>
         <p v-if="esta_trabalhando">Estou trabalhando no momento.</p>
         <p v-else>Estou em busca de novas oportunidades.</p>
-        <p>Utilizo as Seguintes tecnologias:</p>
+        
+        <p>Utilizo as Seguintes tecnologias para back-end</p>
         <ul>
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>Python</li>
+            <li v-for="(tecnologia, index) in backendTech" v-bind:key="index">
+                {{ tecnologia }}
+            </li>
         </ul>
+        
+        <p>Utilizo as Seguintes tecnologias para front-end</p>
+        <ul>
+            <li v-for="tecfront in frontendTech" :key="tecfront.id">
+                {{ tecfront.linguagem }}
+            </li>
+        </ul>
+        
         <p v-if="3 > 2" class="paragrafo_pai">Testando</p>
+        
         <div>
             <button @click="showEmail">{{ texto_botao }}</button>
         </div>
+       
         <p v-show="mostrar_email">Meu email é:  {{ email }}</p>
+       
         <Logo/>
+        
         <p class="teste">Para acessar meu portifólio basta <a v-bind:href="meu_link" target="_blank">clicar aqui</a></p>
     </div>
 </template>
@@ -33,7 +46,15 @@ export default {
             mostar_email: false,
             email:"victoravgs@gmail.com",
             meu_link:"https://github.com/victorfreireavfs/devmedia-estudos",
-            texto_botao:"Mostrar email."
+            texto_botao:"Mostrar email.",
+            // array
+            backendTech: ['JavaScript','PHP','Python'],
+            // objeto
+            frontendTech: [
+                {id: 1, linguagem:'HTML'},
+                {id: 2, linguagem:'CSS'},
+                {id: 3, linguagem: 'VUE'}
+            ]
         }
     },
     
