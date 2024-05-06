@@ -175,7 +175,6 @@ EVENTOS COM $emit
 - o evento deve ser registrado no componente
 - é preciso definir o que será feito com a ativação do evendo na 
   chamada do componente
-  
 
-* ESTUDAR : 
--manipulação de array: array.filter - array.push
+
+----------------------------
