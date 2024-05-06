@@ -1,5 +1,7 @@
 <template>
      <div>
+        <p> {{ email }}</p>
+
         <p v-if="esta_trabalhando">Estou trabalhando no momento.</p>
         <p v-else>Estou em busca de novas oportunidades.</p>
         
@@ -39,12 +41,15 @@ export default {
     components: {
         Logo
     },
+
+    props: {
+            email: String,
+            esta_trabalhando: Boolean
+    },
     
     data(){
         return{
-            esta_trabalhando: false,
             mostar_email: false,
-            email:"victoravgs@gmail.com",
             meu_link:"https://github.com/victorfreireavfs/devmedia-estudos",
             texto_botao:"Mostrar email.",
             // array
@@ -55,7 +60,7 @@ export default {
                 {id: 2, linguagem:'CSS'},
                 {id: 3, linguagem: 'VUE'}
             ]
-        }
+        }      
     },
     
     methods:{
