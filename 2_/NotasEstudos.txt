@@ -164,4 +164,10 @@ PASSAR DADOS COM PROPS
 - passados por valores DATA ou inseridos direto
 - declarar as propriedades recebidas pelos componentes em um array ou 
  objeto
-- 
+
+
+
+----------------------
+
+* ESTUDAR : 
+-manipulação de array: array.filter - array.push

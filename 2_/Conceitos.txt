@@ -1,0 +1,45 @@
+REVISÃO DE CONCEITOS
+
+INSTANCIA
+-uma instancia atua como coração da aplicação veu gerenciando os data methods e scripts
+-reatividade= atualizar os dados no DOM sempre que houver mudanças na instância
+-componentes= a instancia pode ser usada pra criar componentes reutilizaveis
+-life cycle hooks= instancia gerencia tbm os LCH 'created' , 'mounted', 'update' e 'destroyed'
+-events= feito através de methods que são ouvidos pelas instancias click ou submit
+-data binding= permitir uma construção de interface dinamica e reativa (vinculação entre js e html)
+
+
+DATA BINDING
+
+-permitir que as propriedados no dados reativos sejam ligadas a interface do usuario
+- garante que qualquer atualizaçáo de dados seja visualizado autimaticamente
+
+- v-bind = usado pra vincular um elemento do DOM a uma expressão ou valor no VUE
+
+<div id="app">
+  <img V-BIND:SRC="imageSrc">
+</div>
+
+instancia ou componente
+new Vue({
+  el: '#app',
+  data: {
+    imageSrc: 'https://example.com/image.jpg'
+  }
+});
+
+- v-model= mais usado para inputs e selects 
+- cria ligação bidirecional entre o elemento de formulário e o estado da aplicação
+<div id="app">
+  <input v-model="message">
+  <p>A mensagem é: {{ message {{</p>
+</div>
+new Vue({
+  el: '#app',
+  data: {
+    message: 'Olá Vue!'
+  }
+});
+
+DIRETIVAS
+- atibutos especiais com o prefixo v- que são aplicados ao DOM pra dar reatividade a else
